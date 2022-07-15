@@ -1,0 +1,80 @@
+/* || general styles */
+@import url('profil.css');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 
+-- Couleurs --
+
+Primary:
+        burgundy: #901C1C;
+        coral: #D3573C;
+*/
+
+html {
+    font-family: "DM Sans", sans-serif;
+  }
+  
+body {
+    margin: 0 70px;
+}
+
+/*** HEADER ***/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;   
+}
+.logo {
+    display: block;
+    width: 150px;
+    height: 40px;
+}
+h1 { 
+    color: #901C1C;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+/*** SECTION ARTICLEs ***/
+
+.photographer-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 70px;
+    column-gap: 185px;
+    margin-top: 100px;
+}
+
+.photographer-section article {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photographer-section article h2 {
+    color: #D3573C;
+    font-size: 36px;
+}
+.photographer-section article a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.photographer-section article img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+ 

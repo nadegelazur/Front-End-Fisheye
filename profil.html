@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/profil.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="assets/logo_icons/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <title>Fisheye - photographe</title>
+  </head>
+  <body>
+    <header>
+        <img src="assets/logo_icons/logo.png" class="logo" />
+    </header>
+    <main id="main">
+        <div class="photograph-header">
+          <button class="contact_button onclick="displayModal()" >Contactez-moi</button>
+        </div>  
+        <div class="photograph-content"></div> 
+        <div id="contact-form">
+          <div class="modal">
+              <header>
+                  <h2>Contactez-moi</h2>
+                  <img src="assets/icons/close.svg" onclick="closeModal()" />
+              </header>
+              <form id="form" name="contactForm">
+                  <div class="data__form">
+                      <label for="name" id="firstName">Prénom</label>
+                      <input id="name" class="input-control" type="text"/>
+                      <span></span>
+                  </div>
+                   <div class="data__form">
+                      <label for="nom" id="lastName">Nom</label>
+                      <input id="nom" class="input-control" type="text"/>
+                      <span></span>
+                  </div>
+                  <div class="data__form">
+                      <label for="email" id="email">Email</label>
+                      <input id="email" class="input-control" type="email" name="email"/>
+                      <span></span>
+                  </div>
+                  <div class="data__form">
+                      <label for="textarea" id="textArea">Votre message</label>
+                      <textarea id="textarea" class="input-control" type="text" name="message"></textarea> 
+                      <span></span>
+                  </div><!-- -->
+                  <button class="contact_button">Envoyer</button>
+              </form>
+          </div>   
+        
+    </main>
+    <!-- <script src="script.js"></script> -->
+    <script src="./scripts/pages/profil.js"></script>
+    <script src="./utils/contactForm.js"></script>
+  </body>
+</html>
